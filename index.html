@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -12,48 +12,50 @@
   </style>
 </head>
 
-<body>
-  <h1>Добавить товар</h1>
-  <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-    <fieldset>
-      <label>
-        Наименование
+<body class="page">
+  <h1 class="page__title title">Добавить товар</h1>
+  <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <fieldset class="fieldset">
+      <label class="fieldset__label">
+        <h2 class="fieldset__subtitle"></h2> Наименование
         <input type="text" name="name">
       </label>
-      <label>
-        Категория
+      <label class="fieldset__label">
+        <h2 class="fieldset__subtitle"></h2> Категория
         <input type="text" name="category">
       </label>
-      <label>
-        Единицы измерения
+      <label class="fieldset__label">
+        <h2 class="fieldset__subtitle"></h2> Единицы измерения
         <input type="text" name="units">
       </label>
-      <label>
-        Дисконт
+      <label class="fieldset__label">
+        <h2 class="fieldset__subtitle"></h2> Дисконт
         <input type="checkbox" name="discount">
       </label>
-      <label><input type="text" disabled></label>
-      <label>
-        Описание
+      <label class="fieldset__label"><input type="text" disabled></label>
+      <label class="fieldset__label">
+        <h2 class="fieldset__subtitle"></h2> Описание
         <br>
         <textarea name="description"></textarea>
       </label>
       <br>
-      <label>
-        Количество
+      <label class="fieldset__label">
+        <h2 class="fieldset__subtitle"></h2> Количество
         <input type="text" name="count">
       </label>
-      <label>
-        Цена
+      <label class="fieldset__label">
+        <h2 class="fieldset__subtitle"></h2> Цена
         <input type="text" name="price">
       </label>
       <br>
-      <label>
+      <label class="fieldset__label">
         <input type="file">
       </label>
     </fieldset>
     <br>
-    <button type="submit">Добавить товар</button>
+    <button class="button" type="submit">
+      <span class="button__text">Добавить товар</span>
+    </button>
   </form>
 </body>
 
